@@ -1,23 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #272727;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #1F2937;
+    background-color: #2C3E50;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header .logo {
     font-size: 24px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 header nav ul {
@@ -28,127 +34,114 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s;
 }
 
-.community-overview {
-    background: url('https://img.lovepik.com/background/20211022/large/lovepik-blue-tech-background-image_401948404.jpg') no-repeat center center/cover;
-    background-color: #4A90E2;
-    color: white;
-    padding: 50px 20px;
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+.banner {
+    background-color: #1abc9c;
+    padding: 150px 20px 80px;
     text-align: center;
+    color: white;
+    position: relative;
 }
 
-.community-overview h1 {
-    font-size: 49px;
+.banner h1 {
+    font-size: 60px;
     margin-bottom: 20px;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-in-out;
 }
 
-.community-overview p {
-    font-size: 20px;
-    margin-bottom: 30px;
+.banner p {
+    font-size: 22px;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    animation: fadeInUp 1.2s ease-in-out;
 }
-.container{
-    background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDQtMjUta281ano0ZjkuanBn.jpg') no-repeat center center/cover
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 .section h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #34495e;
 }
 
-.forums {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.section p {
+    font-size: 18px;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    line-height: 1.8;
 }
 
-.forum-item, .resource-item, .event-item, .member-item {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    flex: 1;
-    text-align: center;
+.policy, .terms, .security {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
 }
 
-.forum-item h3, .resource-item h3, .event-item h3, .member-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.forum-item p, .resource-item p, .event-item p, .member-item p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.event-item {
-    background-color: #ff9800;
-    color: white;
-}
-
-.member-item {
-    background-color: #e68a00;
-    color: white;
-}
-
-.join-community {
-    background-color: #1F2937;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.join-community h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.join-button {
-    
-    /* background-color: #ff9800; */
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 38px;
-    transition: background-color 0.3s;
-}
-
-.join-button:hover {
-    background-color: #e68a00;
+.policy:hover, .terms:hover, .security:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #333;
+    background-color: #2C3E50;
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 footer a {
-    color: #ff9800;
+    color: #f39c12;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .btn-12,

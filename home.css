@@ -298,7 +298,39 @@ transparent;
   );
   z-index: -1;
 }
+
 .btn-12:hover:after,
 .btn-12:hover:before {
   --progress: 0;
 }
+#btn-button118 {
+    --bg-color: 
+#191f36;
+    --snd-bg-color: 
+#262b40;
+    --text-color: 
+#fff;
+    --mian-color: 
+#59b2f4;
+  }
+
+  #btn-button118.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--mian-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--mian-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+  }
+  
+  #btn-button118.btn:hover {
+    box-shadow: none;
+  }
+  
+  #btn-button118 span {
+    color: var(--text-color);
+  }

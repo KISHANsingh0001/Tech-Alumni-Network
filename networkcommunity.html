@@ -4,132 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Network Community</title>
-    <link rel="stylesheet" href="networkcommunity.css">
-    <!-- <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #444;
-        }
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            display: block;
-        }
-        nav a:hover {
-            background: #555;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .section {
-            padding: 20px;
-            margin-bottom: 20px;
-            background: #f4f4f4;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        .section ul {
-            list-style: none;
-            padding: 0;
-        }
-        .section ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        .cta {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        .cta a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            background: #555;
-            border-radius: 5px;
-        }
-        .cta a:hover {
-            background: #666;
-        }
-    </style> -->
+     <link rel="stylesheet" href="networkcommunity.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Network Community</h1>
+        <div class="logo">Tech Alumini Network</div>
+        <nav>
+            <ul>
+                <li><a href="home.html" ><button class="btn-12"><span>Home</span></button></a></li>
+                <li><a href="features.html"><button class="btn-12"><span>Features</span></button></a></li>
+                <li><a href="alumini.html"><button class="btn-12"><span>Alumni directory</span></button></a></li>
+                <li><a href="networkcommunity.html" ><button class="btn-12"><span>Network community</span></button></a></li>
+                <li><a href="about.html" ><button class="btn-12"><span>About</span></button></a></li>
+                <li><a href="login.html" ><button class="btn-12"><span>Login&Register</span></button></a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#overview">Overview</a>
-        <a href="#forums">Discussion Forums</a>
-        <a href="#events">Upcoming Events</a>
-        <a href="#resources">Resource Sharing</a>
-        <a href="#members">Member Spotlights</a>
-        <a href="#join">Join Us</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
-    <div class="container">
-        <div id="overview" class="section">
-            <h2>Community Overview</h2>
-            <p>Welcome to the Network Community! Our community is dedicated to connecting like-minded individuals, sharing knowledge, and fostering collaboration. Here, you'll find resources, discussions, and events that will help you grow and connect with others.</p>
+
+    <!-- Community Overview -->
+    <section class="community-overview">
+        <h1>Welcome to the Network Community</h1>
+        <p>Our network community brings together students, alumni, and professionals to share knowledge, discuss ideas, and create opportunities. Join us and be a part of a thriving community!</p>
+    </section>
+
+   <div class="container">
+     <!-- Discussion Forums -->
+     <section class="section">
+        <h2>Discussion Forums</h2>
+        <div class="forums">
+            <div class="forum-item">
+                <h3>Career Advice</h3>
+                <p>Discuss career paths, job opportunities, and industry trends with experienced professionals.</p>
+            </div>
+            <div class="forum-item">
+                <h3>Project Collaboration</h3>
+                <p>Find like-minded peers to collaborate on exciting tech projects and research.</p>
+            </div>
+            <div class="forum-item">
+                <h3>Skill Development</h3>
+                <p>Share resources and tips for improving your skills in programming, design, and more.</p>
+            </div>
         </div>
-        <div id="forums" class="section">
-            <h2>Discussion Forums</h2>
-            <ul>
-                <li><a href="#">General Discussions</a></li>
-                <li><a href="#">Technical Queries</a></li>
-                <li><a href="#">Event Planning</a></li>
-            </ul>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="section">
+        <h2>Upcoming Events</h2>
+        <div class="forums">
+            <div class="event-item">
+                <h3>Tech Webinar</h3>
+                <p>Join our next webinar on the future of AI and machine learning, featuring industry experts.</p>
+            </div>
+            <div class="event-item">
+                <h3>Hackathon</h3>
+                <p>Participate in our upcoming hackathon and showcase your problem-solving skills in real-time.</p>
+            </div>
+            <div class="event-item">
+                <h3>Alumni Meetup</h3>
+                <p>Connect with alumni in your area during our regional meetups to exchange insights and build relationships.</p>
+            </div>
         </div>
-        <div id="events" class="section">
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li><strong>Webinar on AI Trends</strong> - September 15, 2024</li>
-                <li><strong>Networking Meetup</strong> - October 1, 2024</li>
-                <li><strong>Hackathon</strong> - November 5-7, 2024</li>
-            </ul>
+    </section>
+
+    <!-- Resource Sharing -->
+    <section class="section">
+        <h2>Resource Sharing</h2>
+        <div class="forums">
+            <div class="resource-item">
+                <h3>Programming Tutorials</h3>
+                <p>Access free tutorials and guides on various programming languages and frameworks.</p>
+            </div>
+            <div class="resource-item">
+                <h3>Resume Building</h3>
+                <p>Download templates and get advice on creating the perfect resume to land your dream job.</p>
+            </div>
+            <div class="resource-item">
+                <h3>Tech Tools</h3>
+                <p>Explore tools and software recommended by professionals to streamline your workflow.</p>
+            </div>
         </div>
-        <div id="resources" class="section">
-            <h2>Resource Sharing</h2>
-            <ul>
-                <li><a href="#">Latest Research Papers</a></li>
-                <li><a href="#">Useful Tools and Templates</a></li>
-                <li><a href="#">Recommended Reading</a></li>
-            </ul>
+    </section>
+
+    <!-- Member Spotlights -->
+    <section class="section">
+        <h2>Member Spotlights</h2>
+        <div class="forums">
+            <div class="member-item">
+                <h3>Jane Doe - Software Engineer</h3>
+                <p>Jane is an active member who has contributed significantly to the discussions around cloud computing.</p>
+            </div>
+            <div class="member-item">
+                <h3>John Smith - Data Scientist</h3>
+                <p>John has been a mentor in several of our skill development forums, specializing in machine learning.</p>
+            </div>
         </div>
-        <div id="members" class="section">
-            <h2>Member Spotlights</h2>
-            <ul>
-                <li><strong>Jane Doe</strong> - Contributor to several key projects</li>
-                <li><strong>John Smith</strong> - Organizer of the annual hackathon</li>
-                <li><strong>Emily Johnson</strong> - Expert in data science</li>
-            </ul>
-        </div>
-        <div id="join" class="section cta">
-            <h2>Join the Community</h2>
-            <p>Ready to be part of our vibrant community? <a href="#">Sign up here</a> to get started!</p>
-        </div>
-        <div id="contact" class="section">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need support, feel free to <a href="#">get in touch with us</a>. We're here to help!</p>
-        </div>
-    </div>
+    </section>
+   </div>
+
+    <!-- Join the Community -->
+    <section class="join-community">
+        <h2>Join the Community</h2>
+        <p>Become a part of this vibrant community and get access to exclusive content, discussions, and events.</p>
+        <!-- <a href="#" class="join-button"><button>Join Now</button></a> -->
+        <a href="#contact" ><button class="btn-12"><span>Join Now</span></button></a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: info@alumnitechnetwork.com</p>
+        <p>Follow us: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">LinkedIn</a>
+        </p>
+        <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+
 </body>
 </html>

@@ -1,29 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
     color: #272727;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
 }
 
 header {
     background-color: #1F2937;
-    padding: 15px;
+    padding: 2px;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
 
 header nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
@@ -37,118 +32,65 @@ header nav ul li a {
     font-size: 16px;
 }
 
-.community-overview {
-    background: url('https://img.lovepik.com/background/20211022/large/lovepik-blue-tech-background-image_401948404.jpg') no-repeat center center/cover;
-    background-color: #4A90E2;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.community-overview h1 {
-    font-size: 49px;
-    margin-bottom: 20px;
-}
-
-.community-overview p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.container{
-    background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDQtMjUta281ano0ZjkuanBn.jpg') no-repeat center center/cover
-}
-
-.section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.forums {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.forum-item, .resource-item, .event-item, .member-item {
-    background-color: white;
-    border-radius: 10px;
+.signup-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
     padding: 20px;
+    background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    flex: 1;
+    border-radius: 8px;
+}
+
+.signup-container h2 {
     text-align: center;
+    color: #32026e;
 }
 
-.forum-item h3, .resource-item h3, .event-item h3, .member-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="date"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.forum-item p, .resource-item p, .event-item p, .member-item p {
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #70e24a;
+    color: white;
+    border: none;
+    border-radius: 5px;
     font-size: 16px;
-    line-height: 1.6;
 }
 
-.event-item {
-    background-color: #ff9800;
-    color: white;
+.signup-container button:hover {
+    background-color: #200549;
 }
 
-.member-item {
-    background-color: #e68a00;
-    color: white;
-}
-
-.join-community {
-    background-color: #1F2937;
-    color: white;
-    padding: 50px 20px;
+.login-link {
     text-align: center;
+    margin-top: 10px;
 }
 
-.join-community h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.join-button {
-    
-    /* background-color: #ff9800; */
-    color: white;
-    padding: 15px 30px;
+.login-link a {
+    color: #e24a4f;
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 38px;
-    transition: background-color 0.3s;
-}
-
-.join-button:hover {
-    background-color: #e68a00;
 }
 
 footer {
+    position: relative;
+    top: 11rem;
+
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: #ff9800;
-    text-decoration: none;
+    margin-top: 50px;
 }
 
 .btn-12,
@@ -235,7 +177,39 @@ transparent;
   );
   z-index: -1;
 }
+
 .btn-12:hover:after,
 .btn-12:hover:before {
   --progress: 0;
 }
+#btn-button118 {
+    --bg-color: 
+#191f36;
+    --snd-bg-color: 
+#262b40;
+    --text-color: 
+#fff;
+    --mian-color: 
+#59b2f4;
+  }
+
+  #btn-button118.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--mian-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--mian-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+  }
+  
+  #btn-button118.btn:hover {
+    box-shadow: none;
+  }
+  
+  #btn-button118 span {
+    color: var(--text-color);
+  }
